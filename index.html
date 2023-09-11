@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Figma Frame to Image</title>
+  <script src="./socket.io.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <label for="serverURL">Server URL: </label>
+  <input type="text" id="serverURL" placeholder="Enter Server URL" value="http://localhost:57487">
+
+  <br>
+
+  <label for="tokenInput">Enter your Figma Token: </label>
+  <input type="password" id="tokenInput" placeholder="Enter Token">
+
+  <br>
+
+  <label for="shareLinkInput">Enter the Figma Share Link: </label>
+  <input type="text" id="shareLinkInput" placeholder="Enter Figma Share Link">
+
+  <br>
+
+  <button id="fetchFrame">Fetch Frame</button>
+  <img id="frameImage" alt="Figma Frame">
+  <canvas id="tempCanvas" style="display: none;"></canvas>
+
+</body>
+</html>
